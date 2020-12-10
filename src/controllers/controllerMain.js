@@ -7,8 +7,7 @@ ControllerMain.PDF = (req,res ) =>{
     const {ciudad,nombre,representante,nit,correo,direccion,telefono,ciudadA,asunto,mensaje,secretaria,ocupacion,redactor}=req.body
 
     if(req.body !== null){
-        console.log(JSON.stringify(req.body))
-
+    
         let pdfDoc = new PDFDocument;
         const font='Times-Roman';
 
@@ -32,10 +31,10 @@ ControllerMain.PDF = (req,res ) =>{
 
         pdfDoc.fontSize(15).font(font).text(mensaje,{align:'justify'});
         pdfDoc.fontSize(45).font(font).text(" ",{align:'left'});
-        
+
         pdfDoc.fontSize(15).font(font).text(secretaria,{align:'left'});
         pdfDoc.fontSize(15).font(font).text(ocupacion,{align:'left'});
-        pdfDoc.fontSize(15).font(font).text(redactor,{align:'left'});
+        pdfDoc.fontSize(15).font(font).text("Redactor: "+redactor,{align:'left'});
     
        
         pdfDoc.end();
