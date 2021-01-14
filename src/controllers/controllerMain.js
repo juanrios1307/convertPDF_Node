@@ -11,7 +11,7 @@ ControllerMain.PDF = (req,res ) =>{
         let pdfDoc = new PDFDocument;
         const font='Times-Roman';
 
-        pdfDoc.pipe(fs.createWriteStream('../../PDFDoc.pdf'));
+        pdfDoc.pipe(fs.createWriteStream('PDFDoc.pdf'));
         pdfDoc.image('src/controllers/logo.png',350,50,{align:'right'});
         pdfDoc.fontSize(18).font(font).text(ciudad,{align:'left'});
         pdfDoc.fontSize(15).font(font).text(" ",{align:'left'});
