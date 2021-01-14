@@ -11,6 +11,6 @@ route.all('/', function(req, res, next) {
 });
 
 route.post('/',controlMain.PDF)
-
+route.get('/:id',controlMain.download)
 
 module.exports =route

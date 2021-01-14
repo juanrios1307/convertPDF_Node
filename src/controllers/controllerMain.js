@@ -11,7 +11,7 @@ ControllerMain.PDF = (req,res ) =>{
         let pdfDoc = new PDFDocument;
         const font='Times-Roman';
 
-        pdfDoc.pipe(fs.createWriteStream('PDFDoc.pdf'));
+        pdfDoc.pipe(fs.createWriteStream('src/controllers/PDFDoc.pdf'));
         pdfDoc.image('src/controllers/logo.png',350,50,{align:'right'});
         pdfDoc.fontSize(18).font(font).text(ciudad,{align:'left'});
         pdfDoc.fontSize(15).font(font).text(" ",{align:'left'});
@@ -39,7 +39,9 @@ ControllerMain.PDF = (req,res ) =>{
        
         pdfDoc.end();
 
-        return  res.status(200).json({status: "ok", data: "PDF creado"});
+        return  res.status(200).json({status: "ok", data: 'PDF ok'});
+
+        //return  ControllerMain.download(req,res,'PDFDoc.pdf')
 
     }else{
         return (res.type('json').status(422).send({
@@ -48,6 +50,18 @@ ControllerMain.PDF = (req,res ) =>{
         }));
 
     }
+}
+
+ControllerMain.download = (req,res,id ) =>{
+    //const id=req.params.id
+    res.download(__dirname+'/'+id,id,function(err){
+        if(err){
+            console.log(err)
+        }else{
+            console.log('PDF creado')
+            //res.status(200).json({status: "ok", data: "PDF creado"});
+        }
+    })
 }
 
 module.exports=ControllerMain
