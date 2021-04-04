@@ -12,7 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9dbf08db-828d-44fa-a264-04a7d355ab24" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PDFDoc.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/controllerMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/controllerMain.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/routerMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/routerMain.js" afterDir="false" />
     </list>
@@ -20,6 +21,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,6 +48,17 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -51,7 +70,9 @@
       <updated>1607618651299</updated>
       <workItem from="1607618652395" duration="291000" />
       <workItem from="1607618975325" duration="4000" />
-      <workItem from="1610645616545" duration="3012000" />
+      <workItem from="1610645616545" duration="4239000" />
+      <workItem from="1611953709840" duration="351000" />
+      <workItem from="1617556919181" duration="2183000" />
     </task>
     <task id="LOCAL-00001" summary="v1">
       <created>1607618687001</created>
@@ -74,7 +95,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610647186593</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="path">
+      <created>1610648781618</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610648781618</updated>
+    </task>
+    <task id="LOCAL-00005" summary="path">
+      <created>1610649051427</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610649051427</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,10 +133,37 @@
     <option name="LAST_COMMIT_MESSAGE" value="path" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="207" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1610647188139">
+    <state x="1784" y="198" width="1084" height="736" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617558784848">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1784" y="198" width="1084" height="736" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.339.1294.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1617558784848" />
+    <state width="1897" height="331" key="GridCell.Tab.0.bottom" timestamp="1617558834125">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1897" height="331" key="GridCell.Tab.0.bottom/72.339.1294.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1617558834125" />
+    <state width="1897" height="331" key="GridCell.Tab.0.center" timestamp="1617558834125">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1897" height="331" key="GridCell.Tab.0.center/72.339.1294.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1617558834125" />
+    <state width="1897" height="331" key="GridCell.Tab.0.left" timestamp="1617558834124">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1897" height="331" key="GridCell.Tab.0.left/72.339.1294.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1617558834124" />
+    <state width="1897" height="331" key="GridCell.Tab.0.right" timestamp="1617558834125">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1897" height="331" key="GridCell.Tab.0.right/72.339.1294.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1617558834125" />
+    <state x="1815" y="175" width="1022" height="737" key="SettingsEditor" timestamp="1617557969172">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1815" y="175" width="1022" height="737" key="SettingsEditor/72.339.1294.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1617557969172" />
+    <state x="446" y="207" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1610648785828">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="1921" y="262" width="800" height="563" key="Vcs.Push.Dialog.v2/72.27.1294.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1607618769219" />
-    <state x="446" y="207" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1294.741@72.27.1294.741" timestamp="1610647188139" />
+    <state x="446" y="207" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1294.741@72.27.1294.741" timestamp="1610648785828" />
+    <state x="1989" y="239" key="search.everywhere.popup" timestamp="1617558149299">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1989" y="239" key="search.everywhere.popup/72.339.1294.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1617558149299" />
   </component>
 </project>
