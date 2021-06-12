@@ -6,7 +6,9 @@ const fs = require('fs');
 
 ControllerMain.PDF = async (req, res) => {
 
-    const {ciudad, nombre, representante, nit, correo, direccion, telefono, ciudadA, asunto, mensaje, secretaria, ocupacion, redactor} = req.body
+    const {ciudad, nombre, representante, nit, correo,
+        direccion, telefono, ciudadA, asunto, mensaje,
+        secretaria, ocupacion, redactor, emailDestino} = req.body.values
 
     if (req.body !== null) {
 
@@ -21,14 +23,14 @@ ControllerMain.PDF = async (req, res) => {
             var transporter = nodemailer.createTransport({
                 service: 'Outlook365',
                 auth: {
-                    user: 'quickservices20202@hotmail.com',
+                    user: 'localshop20202@outlook.com',
                     pass: '2Juan1Santiago'
                 }
             });
 
             const mailOptions = {
-                from: 'quickservices20202@hotmail.com',
-                to: "juanesrios13@gmail.com",
+                from: 'localshop20202@outlook.com',
+                to: emailDestino != undefined?emailDestino:"juanesrios13@gmail.com",
                 attachments: [{
                     filename: 'attachment.pdf',
                     content: pdfData
