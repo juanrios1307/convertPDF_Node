@@ -21,15 +21,15 @@ ControllerMain.PDF = async (req, res) => {
             let pdfData = Buffer.concat(buffers);
 
             var transporter = nodemailer.createTransport({
-                service: 'Yahoo',
+                service: "Outlook365",
                 auth: {
-                    user: 'prueba2021ws@yahoo.com',
-                    pass: 'WSprueba10'
+                    user: 'localshop20202@outlook.com',
+                    pass: '2Juan1Santiago'
                 }
             });
 
             const mailOptions = {
-                from: 'prueba2021ws@yahoo.com',
+                from: 'localshop20202@outlook.com',
                 to: emailDestino != undefined?emailDestino:"juanesrios13@gmail.com",
                 attachments: [{
                     filename: 'attachment.pdf',
