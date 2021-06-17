@@ -29,7 +29,7 @@ ControllerMain.PDF = async (req, res) => {
             });
 
             const mailOptions = {
-                from: 'localshop20202@outlook.com',
+                from: 'prueba2021ws@yahoo.com',
                 to: emailDestino != undefined?emailDestino:"juanesrios13@gmail.com",
                 attachments: [{
                     filename: 'attachment.pdf',
