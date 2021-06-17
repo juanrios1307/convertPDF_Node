@@ -21,10 +21,10 @@ ControllerMain.PDF = async (req, res) => {
             let pdfData = Buffer.concat(buffers);
 
             var transporter = nodemailer.createTransport({
-                service: 'Outlook365',
+                service: 'Yahoo',
                 auth: {
-                    user: 'localshop20202@outlook.com',
-                    pass: '2Juan1Santiago'
+                    user: 'prueba2021ws@yahoo.com',
+                    pass: 'WSprueba10'
                 }
             });
 
